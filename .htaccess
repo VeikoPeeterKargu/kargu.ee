@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Redirect vana navik koopia → navik.ee
+RewriteRule ^navik/?$ https://navik.ee/ [R=301,L]
+RewriteRule ^navik/(.+)$ https://navik.ee/$1 [R=301,L]
+
+# Redirect vana vabrik koopia → navik.ee/veeb
+RewriteRule ^veeb/?$ https://navik.ee/veeb/ [R=301,L]
+RewriteRule ^veeb/(.+)$ https://navik.ee/veeb/$1 [R=301,L]
