@@ -22,7 +22,9 @@ def ensure_dir(ftp, path):
 def upload_dir(ftp, local_path, remote_path):
     ensure_dir(ftp, remote_path)
     for item in sorted(os.listdir(local_path)):
-        if item in SKIP or item.startswith('.'):
+        if item in SKIP:
+            continue
+        if item.startswith('.') and item != '.htaccess':
             continue
         local_item = os.path.join(local_path, item)
         remote_item = remote_path + '/' + item
