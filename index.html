@@ -2,6 +2,17 @@
 <html lang="et">
 <head>
   <meta charset="UTF-8" />
+  <!-- Consent Mode v2 (must be before GA4) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    });
+  </script>
   <!-- Google Analytics (GA4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1CQ79NTTPS"></script>
   <script>
@@ -16,10 +27,41 @@
   <title>Veiko-Peeter Kargu</title>
   <meta name="description" content="Veiko-Peeter Kargu — mõtleja, merekapten ja strateeg. Selgus ja teekonnad." />
   <meta name="author" content="Veiko-Peeter Kargu" />
+  <link rel="canonical" href="https://kargu.ee/">
+  <meta name="robots" content="index, follow">
+  <!-- OG -->
   <meta property="og:title" content="Veiko-Peeter Kargu" />
   <meta property="og:description" content="Mõtleja · Merekapten · Strateeg" />
-  <meta property="og:url" content="https://kargu.ee" />
+  <meta property="og:url" content="https://kargu.ee/" />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="et_EE" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Veiko-Peeter Kargu">
+  <meta name="twitter:description" content="Mõtleja · Merekapten · Strateeg. Selgus ja teekonnad.">
+  <!-- JSON-LD Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Veiko-Peeter Kargu",
+    "url": "https://kargu.ee",
+    "jobTitle": "IT-konsultant, merekapten, strateeg",
+    "description": "Mõtleja, merekapten ja strateeg. Üle 30 aasta kogemust juhtimises ja IT-s.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Vääna-Jõesuu",
+      "addressCountry": "EE"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/veiko-peeter-kargu/",
+      "https://www.facebook.com/kargu",
+      "https://navik.ee",
+      "https://kargu.ee/purjereisid/"
+    ],
+    "knowsAbout": ["IT strategy", "sailing", "leadership", "digital transformation", "Estonian art"]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -144,7 +186,7 @@
 
           <!-- Card 1: Purjereisid -->
           <article class="card reveal" aria-labelledby="card-purje">
-            <a href="https://www.kargu.ee/purjereisid" class="card-img-link" aria-hidden="true" tabindex="-1" target="_blank" rel="noopener noreferrer">
+            <a href="https://kargu.ee/purjereisid/" class="card-img-link" aria-hidden="true" tabindex="-1" target="_blank" rel="noopener noreferrer">
               <div class="card-img-wrap">
                 <img
                   src="https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=900&auto=format&fit=crop"
@@ -160,7 +202,7 @@
               <p class="card-text">
                 Meri on paik, kus argimüra taandub ja toimuvad tõelised muutused. Katamaraanireis Vahemerel on parim puhkus või effektiivne meeskonnakoolitus.
               </p>
-              <a href="https://www.kargu.ee/purjereisid" class="card-cta" aria-label="Vaata purjereisikava" target="_blank" rel="noopener noreferrer">
+              <a href="https://kargu.ee/purjereisid/" class="card-cta" aria-label="Vaata purjereisikava" target="_blank" rel="noopener noreferrer">
                 Broneeri merereis <span aria-hidden="true">→</span>
               </a>
             </div>
@@ -193,7 +235,7 @@
 
           <!-- Card 3: Okas -->
           <article class="card reveal" aria-labelledby="card-okas">
-            <a href="https://www.kargu.ee/okas" class="card-img-link" aria-hidden="true" tabindex="-1" target="_blank" rel="noopener noreferrer">
+            <a href="https://kargu.ee/okas/" class="card-img-link" aria-hidden="true" tabindex="-1" target="_blank" rel="noopener noreferrer">
               <div class="card-img-wrap">
                 <img
                   src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=900&auto=format&fit=crop"
@@ -209,7 +251,7 @@
               <p class="card-text">
                 Aupaklikkus loovuse ja ajaloo ees. Valitud teosed Evald Okase pärandist — haruldane võimalus omandada tükike Eesti kunstiajalugu.
               </p>
-              <a href="https://www.kargu.ee/okas" class="card-cta" target="_blank" rel="noopener noreferrer">
+              <a href="https://kargu.ee/okas/" class="card-cta" target="_blank" rel="noopener noreferrer">
                 Kunsti müük <span aria-hidden="true">→</span>
               </a>
             </div>
@@ -249,7 +291,7 @@
                 <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1V12h3l-.5 3h-2.5v6.8c4.56-.93 8-4.96 8-9.8z"/>
               </svg>
             </a>
-            <a href="https://www.kargu.ee/purjereisid" class="social-item" aria-label="Purjereisid" target="_blank" rel="noopener noreferrer">
+            <a href="https://kargu.ee/purjereisid/" class="social-item" aria-label="Purjereisid" target="_blank" rel="noopener noreferrer">
               <span class="social-label">Purjereisid</span>
               <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <path d="M12 3L4 20h16L12 3z"/><line x1="12" y1="3" x2="12" y2="22"/><path d="M3.5 22h17"/>
@@ -268,5 +310,34 @@
   </footer>
 
   <script src="main.js"></script>
+
+  <!-- Cookie Consent Banner (GDPR) -->
+  <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(15,25,40,0.96);backdrop-filter:blur(16px);color:#e8e4dd;padding:16px 24px;z-index:9999;font-family:'Inter',sans-serif;font-size:14px;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;">
+    <span>Kasutame analüütikajaoks küpsiseid (Google Analytics).
+      <a href="/privaatsuspoliitika" style="color:#c8a55c;text-decoration:underline;">Loe lähemalt →</a>
+    </span>
+    <span style="display:flex;gap:8px;">
+      <button onclick="declineCookiesK()" style="padding:8px 16px;border:1px solid rgba(255,255,255,0.2);background:transparent;color:#e8e4dd;border-radius:6px;cursor:pointer;font-size:13px;font-weight:500;">Keeldun</button>
+      <button onclick="acceptCookiesK()" style="padding:8px 16px;border:none;background:#c8a55c;color:#0f1928;border-radius:6px;cursor:pointer;font-size:13px;font-weight:600;">Nõustun</button>
+    </span>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (!localStorage.getItem('cookiesAccepted_kargu')) {
+        document.getElementById('cookie-banner').style.display = 'flex';
+      }
+    });
+    function acceptCookiesK() {
+      localStorage.setItem('cookiesAccepted_kargu', 'true');
+      document.getElementById('cookie-banner').style.display = 'none';
+      if (typeof gtag === 'function') {
+        gtag('consent', 'update', { 'analytics_storage': 'granted' });
+      }
+    }
+    function declineCookiesK() {
+      localStorage.setItem('cookiesAccepted_kargu', 'false');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+  </script>
 </body>
 </html>

@@ -1,0 +1,42 @@
+<!-- ========================================== -->
+<!-- UNIFIED INJECTION BLOCK FOR SQUARESPACE    -->
+<!-- Location: Website > Website Tools > Code Injection > Header -->
+<!-- ========================================== -->
+
+<!-- 1. STRUCTURED DATA (SEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Purjereisid - Kargu",
+  "url": "https://kargu.ee/purjereisid",
+  "logo": "https://kargu.ee/purjereisid/favicon.svg",
+  "description": "Katamaraani rent kapteniga Vahemerel. Privaatsed purjereisid Türgis, Kreekas, Horvaatias ja Itaalias.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "EE"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "EUR",
+    "lowPrice": "850",
+    "highPrice": "2500"
+  }
+}
+</script>
+
+<!-- 2. GOOGLE ANALYTICS 4 (GTAG) -->
+<!-- ASENDA G-XXXXXXXXXX OMA REAALSE GA4 MEASUREMENT ID-GA -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Peamine GA4 konfiguratsioon koos Content Groupinguga
+  gtag('config', 'G-XXXXXXXXXX', {
+    'content_group': 'purjereisid',
+    'region': 'EE'
+  });
+</script>
+<!-- End Injection -->
